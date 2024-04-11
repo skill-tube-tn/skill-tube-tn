@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skills-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <h1><a href="#">Skill<span>Tube</span></a></h1>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html"><i>Home</i></a>
+          <a href="#About"><i>About</i></a>
+          <a href="#Services"><i>Services</i></a>
+          <a href="#contact-section"><i>Contact</i></a>
+          <div class="dropdown">
+            <a class="dropbtn">Select Option<i class='bx bx-chevron-down'></i></a>
+            <div class="dropdown-content">
+                <a href="#">Skill 1</a>
+                <a href="#">Skill 2</a>
+                <a href="#">Skill 3</a>
+                <a href="#">Skill 4</a>
+                <a href="#">Skill 5</a>
+                <a href="#">Skill 6</a>
+                <a href="#">Skill 7</a>
+                <a href="#">Skill 8</a>
+                <a href="#">Skill 9</a>
+                <a href="#">Skill 10</a>
+            </div>
+        </div>
+        </nav>
+      </header>        
+      <div class="title-1"><h1><span>Skill-1</span>: Artificial Intelligence (AI) and Machine Learning (ML)</h1></div>
+      <div class="container"> 
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Channel 1">
+            <div class="card-content">
+                <h3 class="card-title">3Blue1Brown</h3>
+                <p class="card-description">While not exclusively focused on AI and ML, this channel provides excellent visual explanations of complex mathematical concepts, which are fundamental to understanding AI and ML algorithms.</p>
+                <a href="#" class="card-button">Subscribe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Channel 2">
+            <div class="card-content">
+                <h3 class="card-title">Channel 2</h3>
+                <p class="card-description">Description of Channel 2.</p>
+                <a href="#" class="card-button">Subscribe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Channel 3">
+            <div class="card-content">
+                <h3 class="card-title">Channel 3</h3>
+                <p class="card-description">Description of Channel 3.</p>
+                <a href="#" class="card-button">Subscribe</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="title-1"><h1><span>Skill-1</span>: Data Science and Analytics</h1></div>
+      <div class="container"> 
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Channel 1">
+            <div class="card-content">
+                <h3 class="card-title">Channel 1</h3>
+                <p class="card-description">Description of Channel 1.</p>
+                <a href="#" class="card-button">Subscribe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Channel 2">
+            <div class="card-content">
+                <h3 class="card-title">Channel 2</h3>
+                <p class="card-description">Description of Channel 2.</p>
+                <a href="#" class="card-button">Subscribe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Channel 3">
+            <div class="card-content">
+                <h3 class="card-title">Channel 3</h3>
+                <p class="card-description">Description of Channel 3.</p>
+                <a href="#" class="card-button">Subscribe</a>
+            </div>
+        </div>
+      </div>
+      <script>
+        function toggleMenu() {
+        var navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("show");
+      }
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var dropdowns = document.getElementsByClassName("dropdown");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var dropdown = dropdowns[i];
+                dropdown.addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.getElementsByClassName("dropdown-content")[0];
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
